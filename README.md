@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **AFRICA THOUGHTS**
 
-## Getting Started
+Conecte-se à riqueza da África. Capture, reflita e compartilhe ideias sobre cultura, história e conhecimento africano. Um espaço para guardar e celebrar nossa herança e sabedoria.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **Sobre o Projeto**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**AFRICA THOUGHTS** é uma plataforma criada para celebrar e preservar a rica herança africana. Nosso objetivo é proporcionar um espaço onde usuários possam:
+- Capturar ideias sobre cultura, história e tradições africanas.
+- Refletir sobre o impacto do conhecimento ancestral no mundo atual.
+- Compartilhar informações para fortalecer nossa conexão com a África.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este é um ambiente de aprendizado e colaboração, promovendo a preservação da memória africana para as futuras gerações.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## **Funcionalidades**
 
-To learn more about Next.js, take a look at the following resources:
+- **Postagens e Reflexões:** Compartilhe conteúdos que valorizem a cultura e a história africanas.
+- **Exploração de Conteúdo:** Descubra postagens de outros usuários e amplie seu conhecimento sobre a África.
+- **Preservação Digital:** Armazene e documente histórias, tradições e sabedorias.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> ⚠️ **Nota:** Ainda não é possível comentar nas postagens. Esta funcionalidade está em desenvolvimento.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## **Como Usar**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Crie sua Conta:** Inscreva-se utilizando o sistema de autenticação.
+2. **Explore Conteúdos:** Leia e aprenda com as postagens disponíveis.
+3. **Compartilhe Conhecimento:** Publique reflexões e histórias sobre a cultura africana.
+4. **Engaje-se Futuramente:** Em breve, será possível comentar nas postagens para discussões mais interativas.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## **Tecnologias Utilizadas**
+
+- **Frontend:** [Next.js](https://nextjs.org/) com Tailwind CSS para estilização.
+- **Autenticação:** [NextAuth.js](https://next-auth.js.org/) para login e registro.
+- **Backend:** API Routes do Next.js para criação do servidor.
+- **Banco de Dados:** [MongoDB](https://www.mongodb.com/) para armazenamento de dados.
+
+---
+
+## **Contribua com o Projeto**
+
+Quer ajudar a construir um espaço ainda mais forte para a preservação da memória africana?
+
+1. Faça um fork deste repositório.
+2. Crie uma branch com sua funcionalidade:  
+   ```bash
+   git checkout -b minha-funcionalidade
+
+   Faça commit das alterações:
+bash
+Copiar código
+git commit -m "Descrição da funcionalidade"
+Faça o push para a branch:
+bash
+Copiar código
+git push origin minha-funcionalidade
+Abra um Pull Request e descreva sua contribuição.
+Contato
+Caso tenha dúvidas ou sugestões, entre em contato conosco:
+
+E-mail: loidpadre@gmail.com
+LinkedIn: loidpadre
+Juntos, fortalecemos a herança e o futuro da África. Compartilhe o conhecimento. Preserve a memória! 🌍

@@ -4,8 +4,8 @@ import { Post } from "../../models/post";
 
 
 
-export async function DELETE(req: Request, context :{params: {id: string}}){
-    const { id } =  context.params;
+export async function DELETE(req: Request, { params }: { params: Promise<{ id: string }> }){
+    const { id } = await params;
 
     if(!id){
         return NextResponse.json("Id do post não fornecido!")

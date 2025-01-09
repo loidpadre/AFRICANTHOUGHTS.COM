@@ -4,13 +4,13 @@ import { Post } from "../../models/post";
 import { User } from "../../models/user";
 import { Params } from "next/dist/server/request/params";
 
-export async function GET(req: Request, context: { params: Params }) {
+export async function GET(req: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     // Conectar ao banco de dados
     await connect();
 
     // Verificar e obter o ID do usuário
-    const { id } = await context.params;
+    const { id } = await params;
     if (!id) {
       return NextResponse.json({ message: "ID do usuário não fornecido!" }, { status: 400 });
     }

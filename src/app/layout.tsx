@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
@@ -6,30 +6,39 @@ import { Footer } from "@/components/Footer/Footer";
 import { SessionProvider } from "next-auth/react";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import Image from "next/image";
+import { ReactNode } from "react"; // Importando ReactNode
 
+// Importando o tipo correto para a session
+import { Session } from "next-auth";
 
+// Definindo LayoutProps com uma estrutura mais flexível
+type LayoutProps = {
+  children: ReactNode;
+  session: Session | null; // Permitir null ou session válida
+};
 
 export default function RootLayout({
-  children,
+  children, 
   session,
-}: Readonly<{
-  children: React.ReactNode;
-  session: any
-}>) {
+}: LayoutProps) {
   return (
     <SessionProvider session={session}>
       <html lang="pt-br">
-      <body className=" w-full h-screen"
-      >
-        <AspectRatio ratio={16 / 9}>
-    <Image src="https://plus.unsplash.com/premium_photo-1675705698856-4e15ed5506d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width={1000} height={300}  alt="Image" className=" w-full h-60 object-cover" />
-    <Header/>
-        {children}
-        <Footer/>
-</AspectRatio>
-      </body>
-    </html>
+        <body className="w-full h-screen">
+          <AspectRatio ratio={16 / 9}>
+            <Image
+              src="https://plus.unsplash.com/premium_photo-1675705698856-4e15ed5506d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              width={1000}
+              height={300}
+              alt="Image"
+              className="w-full h-60 object-cover"
+            />
+            <Header />
+            {children}
+            <Footer />
+          </AspectRatio>
+        </body>
+      </html>
     </SessionProvider>
   );
 }
-

@@ -37,9 +37,7 @@ export function Header() {
         <header className="flex flex-col items-center gap-5 justify-between m-8 mx-28 text-white md:flex-row md:items-center">
             <div>
                 <Link href="/">
-                    <h1 className="text-base text-sm font-bold text-primary-400">
-                        AFRICANTHOUGHTS<span className="text-secondary-900">.COM</span>
-                    </h1>
+                    <Image src="/1.png" alt="logo" width={150} height={150}/>
                 </Link>
             </div>
             <nav>

@@ -17,7 +17,7 @@ export default function Perfil() {
   const router = useRouter();
 
   const getUsers = async () => {
-    const response = await fetch("http://localhost:3000/api/getusers");
+    const response = await fetch("/api/getusers");
     if (!response.ok) {
       console.error("Erro ao buscar usuário!");
       return;
@@ -36,7 +36,7 @@ export default function Perfil() {
     }
   
     try {
-      const response = await fetch(`http://localhost:3000/api/getpostuser/${id}`);
+      const response = await fetch(`/api/getpostuser/${id}`);
   
       if (!response.ok) {
         console.error("Erro ao buscar post do usuário! Status:", response.status);
@@ -97,7 +97,7 @@ export default function Perfil() {
         category,
         autor: id,
       };
-      const response = await fetch("http://localhost:3000/api/post", {
+      const response = await fetch("/api/post", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -121,7 +121,7 @@ export default function Perfil() {
 
 
   const deletePost = async (id) =>{
-    const response = await fetch(`http://localhost:3000/api/deletepost/${id}`,{
+    const response = await fetch(`/api/deletepost/${id}`,{
       method: "DELETE",
     })
     if(!response){

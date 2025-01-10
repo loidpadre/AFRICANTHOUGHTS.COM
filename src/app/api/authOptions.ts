@@ -2,6 +2,7 @@ import NextAuth, { AuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { User } from "../api/models/user"; // Atualize para o caminho correto
 export const authOptions: AuthOptions = {
+  
     providers: [
       GoogleProvider({
         clientId: process.env.GOOGLE_CLIENT_ID!,
@@ -18,8 +19,9 @@ export const authOptions: AuthOptions = {
               console.log("Usuário já existe");
               return true; 
             }
+            const Base_url= process.env.NEXTAUTH_URL
   
-            const res = await fetch("http://localhost:3000/api/user", {
+            const res = await fetch(`${Base_url}/api/user`, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

@@ -57,8 +57,7 @@ export default function Home() {
       <Hero />
       <Search />
       {dataInfo.length > 0 ? (
-        //<Cards data={dataInfo} /> 
-        <div>Hello</div>
+        <Cards data={dataInfo} /> 
       ) : (
         <div className="text-center mt-20">Nenhum post ainda!</div> 
       )}

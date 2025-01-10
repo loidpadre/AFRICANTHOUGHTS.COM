@@ -13,7 +13,6 @@ export async function GET() {
   const response = NextResponse.json(thought || { message: "Sem Pensamento" });
 
   // Adicionando cabeçalhos CORS para permitir requisições da Vercel
-  response.headers.set('Access-Control-Allow-Origin', 'https://africanthoughts-com.vercel.app/');
   response.headers.set('Access-Control-Allow-Origin', 'https://africanthoughts-r7lanzhym-loid-padres-projects.vercel.app');
   response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   response.headers.set('Access-Control-Allow-Headers', 'Content-Type');

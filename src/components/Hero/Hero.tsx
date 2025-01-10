@@ -15,11 +15,11 @@ export default function Hero() {
     }
 
     return (
-        <section className="w-[70%]  m-auto">
+        <section className="w-[80%] md:w-[70%] m-auto">
             <div className="pt-24 text-center relative">
-                <h1 className="text-5xl font-bold">COMPARTILHE O <span className="font-light">CONHECIMENTO</span></h1>
+                <h1 className="font-3xl md:text-5xl md:font-bold">COMPARTILHE O <span className="font-light">CONHECIMENTO</span></h1>
                 <h1 className="text-5xl font-semibold">PRESERVE A <span className="text-primary-400">MEMÓRIA</span> AFRICANA!</h1>
-                <p className="py-4 w-1/2 m-auto"> Conecte-se à riqueza da África. Capture, reflita e compartilhe ideias sobre cultura, história e conhecimento africano. Um espaço para guardar e celebrar nossa herança e sabedoria.</p>
+                <p className="py-2 md:py-4 md:w-1/2 md:m-auto  "> Conecte-se à riqueza da África. Capture, reflita e compartilhe ideias sobre cultura, história e conhecimento africano. Um espaço para guardar e celebrar nossa herança e sabedoria.</p>
                 <div className="space-x-4">
                 <Link href={session ? "/perfil": "#"} onClick={session ? undefined: checkSeccion}>
                     <Button> <RiSendPlaneFill size={20} color="white" />Publicar</Button>

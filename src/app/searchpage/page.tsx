@@ -58,7 +58,7 @@ export default function Search() {
                 <Input
                     type="text"
                     placeholder="Pesquisar um pensamento"
-                    className="w-full border-none focus:outline-none"
+                    className="md:w-full w-[60%] m-auto border-none focus:outline-none"
                     onChange={(e) => setValue(e.target.value)}
                 />
             </form>
@@ -71,7 +71,7 @@ export default function Search() {
                         <Ban></Ban>
                     </div>
                 ) : (
-                    <div className="mt-4 w-1/2 m-auto">
+                    <div className="md:mt-4 md:w-1/2 md:m-auto mx-4">
                         {filteredData.map((item, index) => (
                             <Card key={index} className="py-2 my-5">
                                 <CardHeader>

@@ -34,7 +34,7 @@ export function Header() {
     }
 
     return (
-        <header className="flex justify-between m-8 mx-28 text-white">
+        <header className="flex flex-col items-center gap-5 justify-between m-8 mx-28 text-white md:flex-row md:items-center">
             <div>
                 <Link href="/">
                     <h1 className="text-base text-sm font-bold text-primary-400">
@@ -43,7 +43,7 @@ export function Header() {
                 </Link>
             </div>
             <nav>
-                <ul className="flex gap-2 items-center">
+                <ul className="md:flex md:gap-2 flex flex-wrap gap-2 justify-center items-center">
                    <Link href={ session ? "/perfil" : "#" } onClick={session ? undefined: modalOpen}>
                    <Button>Publicar</Button>
                    </Link>

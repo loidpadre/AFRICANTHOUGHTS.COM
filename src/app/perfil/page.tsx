@@ -126,7 +126,7 @@ export default function Perfil() {
   ];
 
   return (
-    <section className="w-1/2 m-auto mt-[5%]">
+    <section className="md:w-1/2 mx-8 md:m-auto mt-[5%]">
       <form className="flex flex-col gap-4 mt-4" onSubmit={handlePost}>
         <Input
           type="text"
@@ -141,7 +141,7 @@ export default function Perfil() {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <div className="flex gap-4">
+        <div className="md:flex md:gap-4 flex flex-wrap gap-2">
           {categors.map((cat) => (
             <p
               key={cat.id}

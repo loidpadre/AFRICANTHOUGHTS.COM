@@ -23,9 +23,9 @@ export function Cards({ data }: cardProps) {
     }
 
     return (
-        <div className=" w-3/4m-auto mt-20 flex  justify-center gap-4 flex-wrap items-center">
+        <div className="w-full mt-20 md:w-3/4 md:m-auto md:mt-20 md:flex  md:justify-center gap-4 flex-wrap items-center">
             {cards.slice().reverse().map((card, index) => (
-                <Card className="space-y-[-100] px-6 py-2 rounded w-[33%] h-[60%]">
+                <Card className="space-y-[-100] mx-6 my-5 md:px-6 md:py-2 rounded md:w-[38%] h-[60%]">
                     <CardHeader>
                         <div className="flex  justify-between">
                             <div className="flex gap-4 items-center mb-3">

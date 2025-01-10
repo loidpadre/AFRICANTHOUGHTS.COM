@@ -61,7 +61,7 @@ export default function Search({ params }: { params: { id: string } }) {
     }
 
     return (
-        <div className="mt-20 w-1/2 m-auto ">
+        <div className="mt-20 md:w-1/2 w-[90%] m-auto ">
             <Card className="py-2 my-5">
                 <CardHeader>
                     <CardTitle className="flex justify-between">

@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { RiSendPlaneFill} from "react-icons/ri"
 import { Button } from "../ui/button"
+import { FaSearch } from "react-icons/fa"
 
 
 export default function Hero() {
@@ -19,9 +20,16 @@ export default function Hero() {
                 <h1 className="text-5xl font-bold">COMPARTILHE O <span className="font-light">CONHECIMENTO</span></h1>
                 <h1 className="text-5xl font-semibold">PRESERVE A <span className="text-primary-400">MEMÓRIA</span> AFRICANA!</h1>
                 <p className="py-4 w-1/2 m-auto"> Conecte-se à riqueza da África. Capture, reflita e compartilhe ideias sobre cultura, história e conhecimento africano. Um espaço para guardar e celebrar nossa herança e sabedoria.</p>
+                <div className="space-x-4">
                 <Link href={session ? "/perfil": "#"} onClick={session ? undefined: checkSeccion}>
                     <Button> <RiSendPlaneFill size={20} color="white" />Publicar</Button>
                 </Link>
+                <Link href="/searchpage">
+                <Button className="text-center bg-primary-400">
+                                    <FaSearch className="h-4 w-4 text-white ml-2" />
+                                </Button>
+                </Link>
+                </div>
 
             </div>
         </section>

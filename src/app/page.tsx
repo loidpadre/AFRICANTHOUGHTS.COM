@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import { Cards } from "@/components/Cards/Cards"
 import Hero from "@/components/Hero/Hero"
-import { Search } from "@/components/Serch/Search"
 
 
 
@@ -39,7 +38,7 @@ export default function Home() {
     }
   }
 
-  
+
   useEffect(() => {
     getThought()
   }, []) 
@@ -55,7 +54,6 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Search />
       {dataInfo.length > 0 ? (
         <Cards data={dataInfo} /> 
       ) : (

@@ -72,7 +72,9 @@ export function Header() {
                             <li className="text-base hover:text-primary-800 cursor-pointer transition duration-300">
                                 {
                                     session?.user?.image ? (
+                                        <Link href={ session ? "/perfil" : "#" } onClick={session ? undefined: modalOpen}>
                                         <Image src={`${session?.user?.image}`} width={40} height={40} alt="perfil image" className="rounded-[50%] border-2 border-primary-800"></Image>
+                                        </Link>
                                     ):(
                                         <p className="text-primary-50">Bem Vindo, {session?.user?.name}</p>
                                     )

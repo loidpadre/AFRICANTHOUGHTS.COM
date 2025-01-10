@@ -34,7 +34,7 @@ export function Header() {
     }
 
     return (
-        <header className="flex flex-col items-center gap-5 justify-between m-8 mx-28 text-white md:flex-row md:items-center">
+        <header className="flex flex-col items-center gap-5 justify-between my-3 mx-28 text-white md:flex-row md:items-center">
             <div>
                 <Link href="/">
                     <Image src="/1.png" alt="logo" width={150} height={150}/>

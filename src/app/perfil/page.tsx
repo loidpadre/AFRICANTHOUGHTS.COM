@@ -161,7 +161,7 @@ export default function Perfil() {
 
       <div className="mt-[5%]">
         {posts.length === 0 ? (
-          <p className="text-center">Nenhum post publicado ainda</p>
+          <p className="text-center">Seus postes estarão aqui 😉</p>
         ) : (
           posts.slice().reverse().map((post, index) => (
             <Card key={index} className="pb-4 bg-white mb-4 p-4 rounded">

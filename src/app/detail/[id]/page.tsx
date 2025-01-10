@@ -57,7 +57,7 @@ export default function Search({ params }: { params: { id: string } }) {
 
 
     if (!data) {
-        return <div>Nenhum dado encontrado.</div>;
+        return <div className="text-center mt-20">Nenhum dado encontrado.</div>;
     }
 
     return (

@@ -16,7 +16,6 @@ export interface PropsData {
   category: string 
 }
 
-export const BaseURL = "http://localhost:3000/api/"
 
 export default function Home() {
   const [dataInfo, setDataInfo] = useState<PropsData[]>([])
@@ -26,7 +25,7 @@ export default function Home() {
 
   async function getThought() {
     try {
-      const response = await fetch(`${BaseURL}thought`)
+      const response = await fetch(`/api/thought`)
       if (!response.ok) {
         throw new Error("Erro ao buscar os dados da API")
       }

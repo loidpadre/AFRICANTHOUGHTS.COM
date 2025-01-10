@@ -15,7 +15,7 @@ export default function Hero() {
     }
 
     return (
-        <section className="w-[80%] md:w-[70%] m-auto md:mt-[-100] mt-[-100]">
+        <section className="w-[80%] md:w-[70%] m-auto md:mt-[-150] mt-[-150]">
             <div className="pt-24 text-center relative">
                 <h1 className="text-3xl md:text-5xl md:font-bold">COMPARTILHE O <span className="font-light">CONHECIMENTO</span></h1>
                 <h1 className="text-5xl font-semibold">PRESERVE A <span className="text-primary-400">MEMÓRIA</span> AFRICANA!</h1>
